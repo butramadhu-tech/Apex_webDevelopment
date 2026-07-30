@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModernSite | About</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo"><i class="fas fa-rocket"></i> ModernSite</div>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                    <li><a href="todo.html">To-Do</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+                <button class="hamburger" aria-label="Open Mobile Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="animated-bg section-padding" style="min-height: 80vh;">
+        <div class="container reveal">
+            <article class="glass-card">
+                <h2><i class="fas fa-info-circle"></i> About This Project</h2>
+                <p style="margin-top: 1rem; color: var(--text-dark);">
+                    This project represents the final submission for my Frontend Developer Internship. It combines several modules into a single, cohesive application utilizing modern web development standards.
+                </p>
+                <div style="margin-top: 2rem;">
+                    <h3>Core Technologies:</h3>
+                    <ul style="list-style: square; margin-left: 2rem; margin-top: 1rem; color: var(--text-dark);">
+                        <li>Semantic HTML5 & CSS3 (Glassmorphism)</li>
+                        <li>Vanilla JavaScript (ES6+)</li>
+                        <li>OpenWeatherMap REST API</li>
+                        <li>Browser LocalStorage API</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h3>ModernSite</h3>
+            <p>&copy; 2026 ModernSite Internship Project.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>

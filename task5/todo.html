@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModernSite | To-Do App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo"><i class="fas fa-rocket"></i> ModernSite</div>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                    <li><a href="todo.html" class="active">To-Do</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+                <button class="hamburger" aria-label="Open Mobile Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="animated-bg section-padding" style="min-height: 85vh;">
+        <div class="container">
+            <div class="glass-card todo-app reveal">
+                <h2 style="text-align: center;"><i class="fas fa-tasks"></i> Task Manager</h2>
+                
+                <div class="todo-input-box" style="margin-top: 2rem;">
+                    <input type="text" id="todo-input" placeholder="What needs to be done?" autocomplete="off">
+                    <button id="add-todo" class="btn"><i class="fas fa-plus"></i> Add</button>
+                </div>
+
+                <div class="todo-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="active">Active</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+
+                <ul id="todo-list" class="todo-list">
+                    <!-- Tasks injected via JS -->
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h3>ModernSite</h3>
+            <p>&copy; 2026 ModernSite Internship Project.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/todo.js" defer></script>
+</body>
+</html>

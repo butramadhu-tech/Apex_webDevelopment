@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModernSite | Professional Portfolio</title>
+    <meta name="description" content="Final Internship Project integrating a Website, Weather App, and To-Do App.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-rocket"></i> ModernSite
+            </div>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                    <li><a href="todo.html">To-Do</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" aria-label="Open Mobile Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="animated-bg">
+        <section class="hero container">
+            <div>
+                <h1 class="reveal">Hello, I'm a</h1>
+                <div class="typing-container reveal">
+                    <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                </div>
+                <p class="reveal">Welcome to my final internship project integrating professional UI/UX, a live Weather API, and a robust To-Do App into one seamless experience.</p>
+                <div class="hero-btns reveal">
+                    <a href="weather.html" class="btn"><i class="fas fa-cloud-sun"></i> Weather App</a>
+                    <a href="todo.html" class="btn btn-secondary" style="color: #fff; border-color: #fff;"><i class="fas fa-tasks"></i> To-Do App</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h3>ModernSite</h3>
+            <div class="social-icons">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2026 ModernSite Internship Project.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
