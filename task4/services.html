@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModernSite | Our Services</title>
+    <meta name="description" content="Explore our professional services including Web Development, UI/UX Design, and Digital Marketing.">
+    <link rel="canonical" href="https://modernsite.example.com/services.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .media-section {
+            padding: 3rem;
+            text-align: center;
+            background-color: var(--background-light);
+            margin-top: 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        .media-section video {
+            width: 100%;
+            max-width: 800px;
+            border-radius: var(--border-radius);
+            margin-top: 1.5rem;
+            box-shadow: var(--box-shadow);
+        }
+    </style>
+</head>
+<body>
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <header class="navbar">
+        <div class="container flex">
+            <div class="logo">ModernSite</div>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-links flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active" aria-current="page">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+                <button class="hamburger" aria-label="Open Mobile Menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="services-section">
+            <div class="container">
+                <h1 style="text-align: center;">Our Services</h1>
+                <div class="services-grid grid">
+                    <article class="service-card">
+                        <!-- Optimized WebP Image -->
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=60&fm=webp" alt="Web Development Concept" loading="lazy" width="600" height="400" class="service-img">
+                        <div class="service-content">
+                            <h2>Web Development</h2>
+                            <p>Custom, responsive websites built with modern technologies ensuring performance and scalability.</p>
+                            <button class="btn open-modal" style="margin-top: auto; width: fit-content;" aria-haspopup="dialog">Learn More</button>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=60&fm=webp" alt="UI/UX Design Concept" loading="lazy" width="600" height="400" class="service-img">
+                        <div class="service-content">
+                            <h2>UI/UX Design</h2>
+                            <p>Beautiful and intuitive user interfaces designed to provide the best user experience.</p>
+                            <button class="btn open-modal" style="margin-top: auto; width: fit-content;" aria-haspopup="dialog">Learn More</button>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=600&q=60&fm=webp" alt="Digital Marketing Concept" loading="lazy" width="600" height="400" class="service-img">
+                        <div class="service-content">
+                            <h2>Digital Marketing</h2>
+                            <p>Strategic marketing campaigns to boost your brand visibility and drive conversions.</p>
+                            <button class="btn open-modal" style="margin-top: auto; width: fit-content;" aria-haspopup="dialog">Learn More</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="media-section">
+                    <h2>See Our Work in Action</h2>
+                    <p>Watch this brief overview of our capabilities.</p>
+                    <video controls preload="none" poster="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=60&fm=webp">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h3>ModernSite</h3>
+            <p>&copy; 2026 ModernSite. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">↑</button>
+
+    <!-- Modal Popup -->
+    <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close Modal">&times;</button>
+            <h2 id="modal-title">Service Details</h2>
+            <p>Our dedicated team works closely with you to understand your requirements and deliver solutions that exceed expectations. Let's build something amazing together!</p>
+            <br>
+            <a href="contact.html" class="btn">Contact Us Now</a>
+        </div>
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>

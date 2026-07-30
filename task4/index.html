@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO and Meta Tags -->
+    <title>ModernSite | Professional Digital Solutions</title>
+    <meta name="description" content="ModernSite provides top-tier web development, UI/UX design, and digital marketing solutions optimized for performance.">
+    <meta name="keywords" content="Web Development, UI/UX, Digital Marketing, ModernSite, Professional Services">
+    <meta name="author" content="ModernSite Team">
+    <link rel="canonical" href="https://modernsite.example.com/">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="ModernSite | Professional Digital Solutions">
+    <meta property="og:description" content="ModernSite provides top-tier web development, UI/UX design, and digital marketing solutions optimized for performance.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://modernsite.example.com/">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ModernSite | Professional Digital Solutions">
+    <meta name="twitter:description" content="ModernSite provides top-tier web development and UI/UX design.">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <header class="navbar">
+        <div class="container flex">
+            <div class="logo">ModernSite</div>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-links flex">
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" tabindex="0">🌙</button>
+                <button class="hamburger" aria-label="Open Mobile Menu" aria-expanded="false" aria-controls="mobile-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <h1>Build Your Future With Us</h1>
+                <p>We provide modern digital solutions to help your business grow and succeed in a competitive landscape.</p>
+                <div class="hero-btns flex">
+                    <a href="services.html" class="btn" aria-label="View our services">Our Services</a>
+                    <a href="contact.html" class="btn btn-secondary" aria-label="Get in touch with us">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Slider/Carousel -->
+        <section class="section-padding container" aria-label="Featured Work Carousel">
+            <h2 style="text-align: center;">Featured Work</h2>
+            <div class="slider-container" role="region" aria-roledescription="carousel">
+                <button class="slider-btn slider-prev" aria-label="Previous slide">&#10094;</button>
+                <div class="slider-wrapper">
+                    <!-- Optimized Images: WebP format, lazy loading, descriptive alt text -->
+                    <div class="slide" role="group" aria-roledescription="slide" aria-label="1 of 3">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60&fm=webp" alt="Person typing on a laptop with code on screen" loading="lazy" width="800" height="450">
+                    </div>
+                    <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=60&fm=webp" alt="Design sketches and color palettes on a desk" loading="lazy" width="800" height="450">
+                    </div>
+                    <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
+                        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=800&q=60&fm=webp" alt="Laptop showing analytical charts and graphs" loading="lazy" width="800" height="450">
+                    </div>
+                </div>
+                <button class="slider-btn slider-next" aria-label="Next slide">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="features section-padding" id="features">
+            <div class="container">
+                <h2 style="text-align: center;">Why Choose Us</h2>
+                <div class="features-grid grid">
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">🚀</div>
+                        <h3>Fast Performance</h3>
+                        <p>Optimized for speed and flawless user experience across all devices.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">📱</div>
+                        <h3>Fully Responsive</h3>
+                        <p>Our designs look stunning on mobile, tablet, and desktop screens.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">🔒</div>
+                        <h3>Secure Solutions</h3>
+                        <p>Security is our top priority for every project we build.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h3>ModernSite</h3>
+            <p>&copy; 2026 ModernSite. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top of Page" tabindex="0">↑</button>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>

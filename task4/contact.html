@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModernSite | Contact Us</title>
+    <meta name="description" content="Get in touch with the ModernSite team for your next web development project.">
+    <meta name="keywords" content="Contact ModernSite, Hire Developers, Web Design Inquiry">
+    <meta name="author" content="ModernSite Team">
+    <link rel="canonical" href="https://modernsite.example.com/contact.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    
+    <meta property="og:title" content="ModernSite | Contact Us">
+    <meta property="og:description" content="Get in touch with ModernSite for professional digital solutions.">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-info {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .contact-info p {
+            color: var(--text-light);
+            font-size: 1.125rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <header class="navbar">
+        <div class="container flex">
+            <div class="logo">ModernSite</div>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-links flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+                <button class="hamburger" aria-label="Open Mobile Menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section section-padding">
+            <div class="container">
+                <div class="contact-info">
+                    <h1>Get In Touch</h1>
+                    <p>Have a project in mind or want to learn more about our services? Send us a message and we'll get back to you shortly!</p>
+                </div>
+                
+                <form id="contact-form" action="#" method="POST" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe" aria-required="true" aria-describedby="name-error">
+                        <span id="name-error" class="error-msg" role="alert">Name is required.</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com" aria-required="true" aria-describedby="email-error">
+                        <span id="email-error" class="error-msg" role="alert">Please enter a valid email address.</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" aria-label="Select a subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="project">New Project</option>
+                            <option value="support">Support</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your message here..." aria-required="true" aria-describedby="msg-error"></textarea>
+                        <span id="msg-error" class="error-msg" role="alert">Message must be at least 10 characters long.</span>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h3>ModernSite</h3>
+            <p>&copy; 2026 ModernSite. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">↑</button>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
