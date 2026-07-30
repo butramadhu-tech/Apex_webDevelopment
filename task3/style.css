@@ -1,0 +1,224 @@
+/* task3/style.css */
+:root {
+    --text-color: #ffffff;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    --error-color: #ff6b6b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.app-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Glassmorphism Card */
+.weather-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    box-shadow: var(--glass-shadow);
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 5px 20px;
+    margin-bottom: 2rem;
+    border: 1px solid var(--glass-border);
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--text-color);
+    font-size: 1rem;
+    flex: 1;
+    padding: 10px 0;
+}
+
+.search-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-box button {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.search-box button:hover {
+    transform: scale(1.1);
+}
+
+/* Hidden Utility */
+.hidden {
+    display: none !important;
+}
+
+/* Loading Spinner */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error Message */
+.error-message {
+    text-align: center;
+    background: rgba(255, 107, 107, 0.2);
+    border: 1px solid var(--error-color);
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Weather Info UI */
+.weather-info {
+    text-align: center;
+    animation: slideUp 0.5s ease;
+}
+
+.city-name {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.temperature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+.temperature h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.description {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+/* Details Section */
+.details {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.detail-col {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+}
+
+.detail-icon {
+    font-size: 1.5rem;
+}
+
+.detail-val {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.detail-label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Animations */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .temperature h1 {
+        font-size: 3rem;
+    }
+    .city-name {
+        font-size: 1.5rem;
+    }
+}

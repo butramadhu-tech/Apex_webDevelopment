@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Weather App</title>
+    <meta name="description" content="A professional weather application using OpenWeatherMap API with Glassmorphism design.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Glassmorphism Card -->
+        <main class="weather-card">
+            <header>
+                <h1>Weather</h1>
+                <div class="search-box">
+                    <input type="text" id="city-input" placeholder="Enter city name..." autocomplete="off">
+                    <button id="search-btn" aria-label="Search">
+                        <!-- Search Icon -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Loading Spinner -->
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+            </div>
+
+            <!-- Error Message -->
+            <div id="error-message" class="error-message hidden">
+                <p>City not found. Please try again.</p>
+            </div>
+
+            <!-- Weather Details -->
+            <div id="weather-info" class="weather-info hidden">
+                <h2 id="city-name" class="city-name">--</h2>
+                <div class="temperature">
+                    <img id="weather-icon" src="" alt="Weather Icon" class="weather-icon">
+                    <h1 id="temp">--°C</h1>
+                </div>
+                <p id="description" class="description">--</p>
+                
+                <div class="details">
+                    <div class="detail-col">
+                        <div class="detail-icon">💧</div>
+                        <div>
+                            <p class="detail-val" id="humidity">--%</p>
+                            <p class="detail-label">Humidity</p>
+                        </div>
+                    </div>
+                    <div class="detail-col">
+                        <div class="detail-icon">💨</div>
+                        <div>
+                            <p class="detail-val" id="wind">-- km/h</p>
+                            <p class="detail-label">Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
