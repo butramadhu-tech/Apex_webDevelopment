@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModernSite | Home</title>
+    <meta name="description" content="A modern responsive multi-page static website.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Professional Navigation Bar -->
+    <header class="navbar">
+        <div class="container flex">
+            <div class="logo">ModernSite</div>
+            <nav>
+                <ul class="nav-links flex">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Build Your Future With Us</h1>
+                <p>We provide modern digital solutions to help your business grow and succeed in a competitive landscape.</p>
+                <div class="hero-btns flex">
+                    <a href="services.html" class="btn">Our Services</a>
+                    <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Slider/Carousel -->
+        <section class="container">
+            <h2 style="text-align: center; margin-top: 3rem;">Featured Work</h2>
+            <div class="slider-container">
+                <button class="slider-btn slider-prev">&#10094;</button>
+                <div class="slider-wrapper">
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=800&q=80" alt="Slide 3">
+                    </div>
+                </div>
+                <button class="slider-btn slider-next">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 style="text-align: center;">Why Choose Us</h2>
+                <div class="features-grid grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Fast Performance</h3>
+                        <p>Optimized for speed and flawless user experience across all devices.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Fully Responsive</h3>
+                        <p>Our designs look stunning on mobile, tablet, and desktop screens.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Secure Solutions</h3>
+                        <p>Security is our top priority for every project we build.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3>ModernSite</h3>
+            <p>&copy; 2026 ModernSite. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

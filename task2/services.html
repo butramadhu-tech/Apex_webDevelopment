@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModernSite | Services</title>
+    <meta name="description" content="Explore our range of professional services.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .media-section {
+            padding: 3rem 0;
+            text-align: center;
+            background-color: var(--white);
+            margin-top: 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        .media-section video {
+            width: 100%;
+            max-width: 800px;
+            border-radius: var(--border-radius);
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container flex">
+            <div class="logo">ModernSite</div>
+            <nav>
+                <ul class="nav-links flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="services-section">
+            <div class="container">
+                <h2 style="text-align: center;">Our Services</h2>
+                <div class="services-grid grid">
+                    <!-- Service 1 -->
+                    <article class="service-card">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Web Development" class="service-img">
+                        <div class="service-content">
+                            <h3>Web Development</h3>
+                            <p>Custom, responsive websites built with modern technologies ensuring performance and scalability.</p>
+                            <a href="#" class="btn open-modal" style="margin-top: 1rem;">Learn More</a>
+                        </div>
+                    </article>
+
+                    <!-- Service 2 -->
+                    <article class="service-card">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80" alt="UI/UX Design" class="service-img">
+                        <div class="service-content">
+                            <h3>UI/UX Design</h3>
+                            <p>Beautiful and intuitive user interfaces designed to provide the best user experience.</p>
+                            <a href="#" class="btn open-modal" style="margin-top: 1rem;">Learn More</a>
+                        </div>
+                    </article>
+
+                    <!-- Service 3 -->
+                    <article class="service-card">
+                        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=600&q=80" alt="Digital Marketing" class="service-img">
+                        <div class="service-content">
+                            <h3>Digital Marketing</h3>
+                            <p>Strategic marketing campaigns to boost your brand visibility and drive conversions.</p>
+                            <a href="#" class="btn open-modal" style="margin-top: 1rem;">Learn More</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="media-section">
+                    <h3>See Our Work in Action</h3>
+                    <p>Watch this brief overview of our capabilities.</p>
+                    <video controls poster="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h3>ModernSite</h3>
+            <p>&copy; 2026 ModernSite. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">↑</button>
+
+    <!-- Modal Popup -->
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2>Service Details</h2>
+            <p>Our dedicated team works closely with you to understand your requirements and deliver solutions that exceed expectations. Let's build something amazing together!</p>
+            <br>
+            <a href="contact.html" class="btn">Contact Us Now</a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
